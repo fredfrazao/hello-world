@@ -1,0 +1,6 @@
+
+.next/*
+.terraform/*
+.terraform.lock.hcl
+next-env.d.ts
+node_modules/*
