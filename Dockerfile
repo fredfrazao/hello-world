@@ -6,7 +6,6 @@ FROM node:${NODE_VERSION} AS build
 COPY  /node_modules ./node_modules
 COPY package.json package-lock.json ./
 COPY /pages ./pages
-COPY /docker.tf ./
 COPY /hello.yml ./
 RUN npm run build
 
