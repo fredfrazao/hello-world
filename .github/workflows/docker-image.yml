@@ -4,8 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+
 
 jobs:
 
@@ -29,6 +28,6 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-    - name: Push
+    - name: Push to Docker Hub 
       run: |
-        docker build . -t ffr03/hello-world:latest
+        docker push ffr03/hello-world:latest
