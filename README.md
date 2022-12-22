@@ -23,7 +23,7 @@ Execute :
 ## build Docker file
 Execute :
 ```bash
-docker build -t ffr03/ffr03:last .
+docker build -t ffr03/hello-world:last .
 ```
 
 ## Deploy to docker
