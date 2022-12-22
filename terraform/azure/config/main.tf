@@ -1,10 +1,10 @@
 module "akv" {
-  source = "../modules/akv"
-  for_each = toset(var.akv_enabled ? ["akv _enabled"] : [])
-  site                           = var.site
-  tenant_id                      = data.azurerm_client_config.current.tenant_id
-  tags = var.tags
-  location = var.location
+  source    = "../modules/akv"
+  for_each  = toset(var.akv_enabled ? ["akv _enabled"] : [])
+  site      = var.site
+  tenant_id = data.azurerm_client_config.current.tenant_id
+  tags      = var.tags
+  location  = var.location
 }
 
 

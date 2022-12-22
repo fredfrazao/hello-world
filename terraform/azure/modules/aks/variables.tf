@@ -24,3 +24,8 @@ variable "tags" {
   description = "Tags to be applied to the resources"
   type        = map(string)
 }
+
+variable "node_zones" {
+  type    = list(string)
+  default = ["1", "2", "3"]
+}

@@ -1,6 +1,6 @@
 
 variable "site" {
-  type    = string
+  type = string
 
 }
 variable "tags" {

@@ -4,7 +4,7 @@ variable "site" {
 }
 
 variable "location" {
-  type    = string
+  type = string
 }
 
 variable "akv_sku_name" {
