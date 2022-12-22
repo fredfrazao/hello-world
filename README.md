@@ -23,13 +23,21 @@ Execute :
 ## build Docker file
 Execute :
 ```bash
-docker build -t ffr03/ffr03:last .
+docker build -t ffr03/hello-world:last .
 ```
 
 ## Deploy to docker
-
 Execute :
 ```bash
+cd /terraform/docker
+terraform plan
+terraform apply
+```
+
+## Deploy azure infra
+Execute :
+```bash
+cd /terraform/azure
 terraform plan
 terraform apply
 ```
